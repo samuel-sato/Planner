@@ -1,0 +1,13 @@
+
+<div class="card m-4 p-4 border-0">
+    <h3>Editar Lembrete</h3>
+    
+    <div class="card-body">
+        <form action="/editReminder/{{parametro.id}}" method="post">
+            <label>Lembrete</label>
+                <input type="text" id="reminder" name="reminder" class="form-control" value="{{parametro.lembrete}}">
+            <br>
+            <button class="btn btn-success">Editar Lembrete</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<h1>Lembretes</h1>
+
+<a href="addReminder"><button class="btn btn-success">Aicionar</button></a>
+<div class="card border-0 ">
+    
+    {{#each reminder}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h3>{{lembrete}}</h3>
+            <small>{{data}}</small>
+            <br>
+            <br>
+            <a href="editReminder/{{id}}"><button class="btn btn-success">Editar</button></a>
+            <a href="delReminder/{{id}}"><button class="btn btn-danger">Deletar</button></a>
+        </div>
+    </div>
+    {{else}}
+    <h1>Não há nenhum lembrete</h1>
+    {{/each}}
+
+</div>
+
